@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Your existing CSS styles here */
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 60px;
+            width: 60px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            flex-grow: 1; 
+            text-align: center; 
+        }
+
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center; /* Center the navigation links horizontally */
+        }
+
+        nav ul li {
+            margin: 0 15px; /* Add space between menu items */
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #333;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+
+        nav a:hover {
+            background-color: #555; /* Change the background color on hover */
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .gallery-item {
+            text-align: center;
+            margin: 20px;
+        }
+
+        .gallery-item img {
+            width: 300px; /* Adjust the image size as needed */
+            height: 300px; /* Adjust the image size as needed */
+        }
+
+        .gallery-item p {
+            margin: 10px 0;
+        }
+
+        .gallery-row {
+            margin-bottom: 30px; /* Add space between rows */
+        }
+
+        .columns {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .column {
+            width: 30%; /* Adjust the width of each column as needed */
+            text-align: left;
+            margin: 10px;
+            padding: 20px;
+            border: 1px solid #ddd; /* Add borders for separation */
+            border-radius: 10px;
+            position: relative;
+        }
+
+        .column img {
+            width: 100%; /* Make the image take 100% width of its container */
+            height: auto; /* Maintain the aspect ratio */
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        .column h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .column p {
+            margin-bottom: 10px;
+        }
+
+        .column ul {
+            padding: 0;
+            margin: 0;
+        }
+
+        .column li {
+            list-style-type: square;
+            margin-left: 15px;
+            margin-bottom: 10px; /* Adjust the margin-bottom value as needed */
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .column button {
+            background-color: #888;
+            color: #fff;
+            padding: 12px 70px; /* Adjust the padding for a wider button */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s; /* Add a smooth transition effect */
+        }
+
+        .column button:hover {
+            background-color: #666; /* Change the background color on hover */
+        }
+
+        .column button:active {
+            background-color: #444; /* Change the background color on button press */
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }    
+    </style>
+
+    <script>
+        function redirectToGoogleForm1() {
+            window.location.href = "https://forms.gle/yTceeJpNZ6kvUDPG7";
+        }
+
+        function redirectToGoogleForm2() {
+            window.location.href = "https://forms.gle/yTceeJpNZ6kvUDPG7";
+        }
+
+        function redirectToGoogleForm3() {
+            window.location.href = "https://forms.gle/yTceeJpNZ6kvUDPG7";
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO.png" alt="Logo">
+        </div>
+        <h1>Malcolm Lismore</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Prices.html">Prices</a></li>
+            <li><a href="Enquiries.html">Enquiries</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="columns">
+
+     <!-- Column 1 -->
+<div class="column">
+    <img src="6_months.jpeg" alt="Small Picture 1">
+    <h2><strong>6 Months</strong></h2>
+    <p><strong>This comprehensive 6-month course is designed for individuals seeking a deep dive into photography</strong></p>
+    <ul>
+        <li>3 Days per week - 2H per day</li>
+        <li>Covering fundamental principles, advanced techniques, and practical applications</li>
+        <li>Covering fundamental principles, advanced techniques, and practical applications, this extended program allows for a thorough understanding of the art and science of photography.</li>
+        <li>Participants will engage in hands-on projects, receive personalized feedback, and develop a strong foundation for a successful journey in photography.</li>
+        <li><strong>Only LKR 30,000/=</strong></li>
+    </ul>
+    <div class="button-container">
+        <button onclick="redirectToGoogleForm1()">Apply NOW!!</button>
+    </div>
+</div>
+
+<!-- Column 2 -->
+<div class="column">
+    <img src="3_months.jpeg" alt="Small Picture 2">
+    <h2><strong>3 Months</strong></h2>
+    <p><strong>Our 3-month course is an intensive program tailored for those with a passion for photography but limited time availability.</strong></p>
+    <ul>
+        <li>5 Days per week - 3H per day</li>
+        <li>Ideal for enthusiasts and hobbyists, this course condenses essential concepts into a focused curriculum.</li>
+        <li>Participants will explore key aspects of photography, enhance their skills through guided projects, and gain confidence in capturing compelling images.</li>
+        <li>Perfect for a transformative photography experience within a shorter timeframe.</li>
+        <li><strong>Only LKR 45,000/=</strong></li>
+    </ul>
+    <div class="button-container">
+        <button onclick="redirectToGoogleForm2()">Apply NOW!!</button>
+    </div>
+</div>
+
+<!-- Column 3 -->
+<div class="column">
+    <img src="fasttrack.jpeg" alt="Small Picture 3">
+    <h2><strong>FastTrack</strong></h2>
+    <p><strong>The Fast Track course is designed for individuals looking to acquire essential photography skills quickly.</strong></p>
+    <ul>
+        <li>2 Days per week - 8H/9H per day</li>
+        <li>This condensed program provides a concentrated learning experience, covering core concepts and practical techniques efficiently.</li>
+        <li>Perfect for those with a busy schedule or seeking immediate results, this course offers a swift yet effective approach to mastering the basics of photography.</li>
+        <li>Participants will acquire practical skills for capturing stunning images in no time.</li>
+        <li><strong>Only LKR 65,000/=</strong></li>
+    </ul>
+    <div class="button-container">
+        <button onclick="redirectToGoogleForm3()">Apply NOW!!</button>
+    </div>
+</div>
+
+    </div>
+
+    <footer>
+        <p>Name: Malcolm Lismore</p>
+        <p>Phone: +44 (131) 123456789</p>
+        <p>Social Media: Follow me on <a href="https://www.facebook.com">Facebook</a> and <a href="https://www.instagram.com/yourprofile">Instagram</a></p>
+    </footer>
+</body>
+</html>

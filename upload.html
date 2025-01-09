@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Malcolm Lismore Photography</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Ensure at least the height of the viewport */
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        header .logo img {
+            height: 60px;
+            width: 60px;
+            margin-right: 20px;
+        }
+
+        h1 {
+            margin: 0;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        main {
+            flex-grow: 1; /* Allow main to grow and take remaining height */
+            padding: 20px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .login-form label {
+            display: block;
+            margin-bottom: 8px;
+            text-align: left;
+        }
+
+        .login-form input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        .login-form button {
+            background-color: #4CAF50; /* Green color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .login-form button:hover {
+            background-color: #45a049; /* Darker green color on hover */
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px;
+        }
+
+        /* Add your styles for the image upload forms here */
+        form {
+            margin-bottom: 20px;
+        }
+
+        form h2 {
+            margin-bottom: 10px;
+        }
+
+        /* Customize the button color */
+        form button {
+            background-color: #3498db; /* Blue color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        form button:hover {
+            background-color: #2980b9; /* Darker blue color on hover */
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Malcolm Lismore</h1>
+    </header>
+
+    <main>
+        <h1>UPLOAD PICTURES TO DATABASE</h1>
+
+        <form action="uploadwildlife.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>WILDLIFE IMAGES</h2>
+            <label for="wildlife_image">Select Image:</label>
+            <input type="file" name="wildlife_image" id="wildlife_image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form action="uploadlandscape.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>LANDSCAPE IMAGES</h2>
+            <label for="landscape_image">Select Image:</label>
+            <input type="file" name="landscape_image" id="landscape_image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form action="uploadwedding.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>WEDDING IMAGES</h2>
+            <label for="wedding_image">Select Image:</label>
+            <input type="file" name="wedding_image" id="wedding_image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form action="uploadphotoshoot.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>PHOTOSHOOT IMAGES</h2>
+            <label for="photoshoot_image">Select Image:</label>
+            <input type="file" name="photoshoot_image" id="photoshoot_image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form action="uploadbirthday.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>BIRTHDAY IMAGES</h2>
+            <label for="birthday_image">Select Image:</label>
+            <input type="file" name="birthday_image" id="birthday_image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form action="uploadgraduation.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>GRADUATION IMAGES</h2>
+            <label for="graduation_image">Select Image:</label>
+            <input type="file" name="graduation_image" id="graduation_image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form action="uploadproduct.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>PRODUCTS IMAGES</h2>
+            <label for="products_image">Select Image:</label>
+            <input type="file" name="products_image" id="products_image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+
+        <form action="uploadother.php" method="post" enctype="multipart/form-data" class="login-form">
+            <h2>OTHER IMAGES</h2>
+            <label for="image">Select Image:</label>
+            <input type="file" name="image" id="image" accept="image/*">
+            <br>
+            <button type="submit">Upload Image</button>
+        </form>
+    </main>
+
+    <footer>
+        <!-- Empty footer content -->
+    </footer>
+</body>
+</html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Background color */
+        }
+    
+        header {
+            background-color: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 20px;
+        }
+
+    
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+    
+        header .logo img {
+            height: 60px;
+            width: 60px;
+            margin-right: 20px;
+        }
+    
+        h1 {
+            margin: 0;
+            flex-grow: 1; 
+            text-align: center; 
+        }
+    
+        nav {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+        }
+    
+        nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Center the navigation links horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Add space between menu items */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    transition: background-color 0.3s; /* Add a smooth transition effect */
+}
+
+nav a:hover {
+    background-color: #555; /* Change the background color on hover */
+}
+
+    
+        main {
+            padding: 20px;
+            text-align: center;
+            background-color: #fff; /* Content background color */
+            border-radius: 10px; /* Rounded corners for content */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Box shadow for content */
+        }
+    
+        .slideshow {
+            position: relative;
+            max-width: 100%;
+        }
+    
+        .slide {
+            display: none;
+            animation-name: fade;
+            animation-duration: 3s; /* Adjust the duration as needed */
+        }
+    
+        .slide img {
+            width: 700px; /* Smaller width for images */
+            height: 520px; /* Smaller height for images */
+            border-radius: 10px; /* Rounded corners for images */
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Box shadow for images */
+        }
+        .description {
+    font-size: 18px;
+    line-height: 1.6;
+    padding: 40px 20%; /* Adjust the left and right padding as needed */
+    text-align: center;
+}
+
+
+        @keyframes fade {
+            0% {
+                opacity: 0;
+            }
+            20% {
+                opacity: 1;
+            }
+            80% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+        
+        .text-on-image {
+            font-family: 'Comic Sans MS bold', cursive;
+            font-size: 24px;
+            color: #fff; /* Text color */
+            background-color: #333; /* Background color for text */
+            padding: 10px 20px;
+            border-radius: 5px; /* Rounded corners for text */
+            position: absolute;
+            bottom: 20px; /* Position the text at the bottom */
+            left: 50%; /* Horizontally center the text */
+            transform: translateX(-50%); /* Center the text horizontally */
+        }
+
+                .learning-text-container {
+            text-align: center;
+            margin-bottom: 20px; /* Adjust as needed */
+        }
+
+        .learning-text {
+            font-size: 18px;
+            margin-bottom: 10px; /* Adjust as needed */
+        }
+
+        .interest-button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            border-radius: 50px; /* Create a round button */
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .interest-button:hover {
+            background-color: #555;
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        /* Add your other CSS styles as needed */
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO.png" alt="Logo">
+        </div>
+        <h1>Malcolm Lismore</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Gallery.php">Gallery</a></li>
+            <li><a href="Prices.html">Prices</a></li>
+            <li><a href="Enquiries.html">Enquiries</a></li>
+            <li><a href="Courses.html">Courses</a></li>
+            <li><a href="Aboutus.html">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="slideshow">
+            <div class="slide fade">
+                <div class="slide-image">
+                    <img src="wildlife.png" alt="Wild Life">
+                    <div class="text-on-image">Wild Life</div>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="slide-image">
+                    <img src="birthday.jpeg" alt="Birthday Party">
+                    <div class="text-on-image">Birthday Party</div>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="slide-image">
+                    <img src="wedding.jpeg" alt="Wedding">
+                    <div class="text-on-image">Wedding</div>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="slide-image">
+                    <img src="photoshoot.png" alt="Photoshoot">
+                    <div class="text-on-image">Photoshoot</div>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="slide-image">
+                    <img src="graduation.jpeg" alt="Graduation">
+                    <div class="text-on-image">Graduation</div>
+                </div>
+            </div>
+            <div class="slide fade">
+                <div class="slide-image">
+                    <img src="product.jpeg" alt="Product">
+                    <div class="text-on-image">Product</div>
+                </div>
+            </div>
+            <!-- Add more image slides with text as needed -->
+        </section>
+        
+        <section class="description">
+            <h2>Welcome to Malcolm Lismore</h2>
+            <p>Welcome to Malcolm Lismore Photography, where every moment is a story waiting to be told through the lens. With years of passion and expertise in capturing the essence of life, we take pride in our commitment to delivering exceptional visual experiences. Our team of talented photographers at Malcolm Lismore is dedicated to not just taking pictures but crafting memories that will last a lifetime. From lively birthday parties to captivating wildlife encounters, from the timeless beauty of weddings to the exquisite details of products, we specialize in a wide range of occasions and subjects. Whether it's a joyous celebration, a glimpse into the wild, a journey of love, or showcasing products in their best light, Malcolm Lismore is there to capture the essence of the moment. Our photography experience goes beyond the click of a camera; it's about creating a comfortable and enjoyable atmosphere that allows the genuine emotions and beauty of the subject to shine through. At Malcolm Lismore, we believe in building connections with our clients, listening to their needs, and turning their visions into reality. Discover the power of visual storytelling with Malcolm Lismore Photography and let us be a part of your journey through all of life's occasions and subjects. Explore our portfolio and experience the art of photography like never before.</p>
+        </section>
+
+
+        <section class="learning-photography">
+            <div class="learning-slide fade">
+                <div class="learning-slide-content">
+                    <div class="learning-text-container">
+                        <p class="learning-text">Are you interested in learning Photography?</p>
+                        <button class="interest-button" onclick="redirectToInterestPage()">Click Me</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more learning slides with text as needed -->
+        </section>
+        
+        <script>
+            // Function to redirect to the Courses.html page
+            function redirectToInterestPage() {
+                window.location.href = 'Courses.html';
+            }
+        </script>
+        
+
+        <footer>
+            <p>Name:  Malcolm Lismore</p>
+            <p>Phone: +44 (131) 123456789</p>
+            <p>Social Media: Follow me on <a href="https://www.facebook.com">Facebook</a> and <a href="https://www.instagram.com/yourprofile">Instagram</a></p>
+        </footer>
+    </main>
+
+    <script>
+        // JavaScript for slideshow
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let i;
+            const slides = document.querySelectorAll(".slide");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds (adjust as needed)
+        }
+    </script>
+</body>
+</html>
